@@ -5,26 +5,56 @@ body {
   margin: 0;
 }
 
-header {
+.site-header {
+  position: relative;
   background: #3b2f2f;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
+  padding: 2.5rem 1rem 2rem;
+  text-align: center;
+  border-bottom: 4px solid #b08d57;
 }
 
-.logo {
-  height: 80px;
-  margin-right: 1rem;
+/* Language selector */
+.lang-switch {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
 }
 
-nav a, nav button {
-  margin-right: 1rem;
+.lang-switch button {
   color: #fff;
   background: none;
-  border: none;
+  border: 1px solid #b08d57;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.25rem;
+  font-size: 0.85rem;
   cursor: pointer;
-  font-size: 1rem;
+  font-family: Georgia, serif;
+}
+
+.lang-switch button:hover {
+  background: #b08d57;
+  color: #3b2f2f;
+}
+
+/* Logo */
+.logo {
+  height: 160px;
+  max-width: 90%;
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+/* Navigation */
+.main-nav a {
+  color: #fff;
+  margin: 0 1rem;
+  font-size: 1.05rem;
+  text-decoration: none;
+  font-family: Georgia, serif;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -41,4 +71,15 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    height: 120px;
+  }
+
+  .lang-switch {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
 }

@@ -6,13 +6,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <img src="logo.png" alt="IQPS Logo" class="logo">
-  <nav>
-    <a href="index.html" data-i18n="nav_home"></a>
-    <a href="about.html" data-i18n="nav_about"></a>
+<header class="site-header">
+  <div class="lang-switch">
     <button onclick="setLang('en')">EN</button>
     <button onclick="setLang('ru')">RU</button>
+  </div>
+
+  <img src="logo.png" alt="IQPS Logo" class="logo">
+
+  <nav class="main-nav">
+    <a href="index.html" data-i18n="nav_home"></a>
+    <a href="about.html" data-i18n="nav_about"></a>
   </nav>
 </header>
 
