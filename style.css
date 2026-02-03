@@ -46,8 +46,8 @@ body {
 
 /* Logo */
 .logo {
-  height: clamp(120px, 18vw, 220px);
-  max-width: 90%;
+  height: clamp(160px, 22vw, 340px);
+  max-width: 95%;
   margin: 0 auto 1.5rem;
   display: block;
 }
@@ -87,7 +87,8 @@ footer {
   }
 
   .logo {
-    height: clamp(140px, 24vw, 220px);
+    height: clamp(200px, 40vw, 380px);
+    max-width: 98%;
   }
 
   .site-header {
